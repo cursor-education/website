@@ -1,17 +1,21 @@
-FROM centos:7
+FROM node:6
+MAINTAINER CURSOR Education team support@cursor.education
 
-RUN yum -v
+RUN apt-get update \
+ && apt-get install -y git
 
-# ADD app/ /app/
-# RUN chown -R webapp:webapp /app
+RUN echo 2 && node -v
 
-# COPY package.json /src/package.json
-# RUN cd /src; npm install
+ADD app/ /app/
+RUN cd /app; npm install
 
-# COPY . /src
+RUN ls -la app
 
-# USER webapp
+ENV app /app
+WORKDIR ${app}
 
 EXPOSE 8080
-CMD ["node", "/src/index.js"]
+# CMD ["node", "/src/index.js"]
+# CMD ["bash"]
+CMD ["npm", "start"]
 # ENTRYPOINT ["/app/env/bin/uwsgi", "--ini", "/app/uwsgi.ini"]

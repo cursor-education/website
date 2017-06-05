@@ -1,13 +1,10 @@
 var express = require('express');
 
-// Constants
-var PORT = 8080;
-
-// App
 var app = express();
-app.get('/', function (req, res){
-  res.send('Hello world from Distelli & Docker!');
+
+app.get('/', function(req, res){
+    res.send('Hello from inside a container!');
 });
 
-app.listen(PORT);
-console.log('Running on http://localhost:' + PORT);
+app.listen(8080);
+console.log('Running on http://localhost');
