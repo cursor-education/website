@@ -1,0 +1,234 @@
+@-webkit-keyframes heartbeat {
+  0%  { transform: scale(1);   }
+  14% { transform: scale(1.3); }
+  28% { transform: scale(1);   }
+  42% { transform: scale(1.3); }
+  70% { transform: scale(1);   }
+}
+
+.list-of-trainers {
+  text-align: center;
+
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &.teacher-focused {
+    .teacher {
+      opacity: 0.3;
+    }
+  }
+
+  // background: blue;
+  width: 1100px;
+  .teacher {
+    // background: red;
+    width: 205px;
+    // background: red;
+    min-height: 200px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+
+    .teacher {
+      // background: red;
+      width: 150px;
+
+      .photo img {
+        max-width: 120px !important;
+        max-height: 120px !important;
+      }
+    }
+  }
+
+  .teacher {
+    // background: #eee;
+    display: inline-block;
+    vertical-align: top;
+
+    margin-bottom: 20px;
+    padding: 10px;
+
+    border-radius: 2px;
+
+    color: #777;
+    text-decoration: none;
+
+    transition: all 0.4s ease;
+
+    // opacity: 0.5;
+
+    &:hover {
+      background: #eee;
+      color: #000;
+      opacity: 1;
+
+      .photo img {
+        transform: perspective(500px) translateZ(30px);
+      }
+
+      .courses .icon {
+        animation: heartbeat 1300ms ease 0s infinite normal;
+      }
+    }
+
+    .photo {
+      img {
+        max-width: 160px;
+        max-height: 160px;
+        border-radius: 50%;
+        transition: all 0.15s ease;
+        transform: perspective(500px) translateZ(0);
+      }
+    }
+
+    .name {
+      // background: pink;
+      color: #444;
+      margin-top: 10px;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .position {
+      // background: green;
+      margin-top: 10px;
+      font-weight: 300;
+      font-size: 14px;
+    }
+
+    .courses {
+      // background: red;
+      margin-top: 10px;
+
+      .icon {
+        vertical-align: top;
+
+        width: 30px;
+        height: 30px;
+
+        background: transparent;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        margin-left: 2px;
+        margin-right: 2px;
+
+        &.frontend {
+          background-color: #f0db4f;
+          border-radius: 50%;
+          &:before {
+            content: "JS";
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            color: #000;
+            font-style: normal;
+            font-size: 12px;
+            font-weight: 800;
+            padding-top: 9px;
+            letter-spacing: 0px;
+          }
+          // background-image: url(https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-128.png);
+        }
+
+        &.java {
+          border-radius: 50%;
+          background-color: #eee;
+          background-image: url(/icons/java-96.png);
+          background-size: 80%;
+        }
+
+        &.ruby {
+          border-radius: 50%;
+          background-color: #fee;
+          background-image: url(https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/ruby-512.png);
+          background-size: 100%;
+        }
+      }
+    }
+
+    .description {
+      // background: yellow;
+      margin-top: 10px;
+      line-height: 1.4em;
+      letter-spacing: 0px;
+      font-size: 14px;
+      font-weight: 200;
+
+      // display: none;
+    }
+  }
+}
+
+
+.list-of-team {
+  text-align: center;
+
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-top: 2px #eee solid;
+  margin-top: 50px;
+  padding-top: 50px;
+
+  .player {
+    // background: #eee;
+    display: inline-block;
+    vertical-align: top;
+
+    margin-bottom: 20px;
+    padding: 10px;
+
+    border-radius: 2px;
+
+    color: #777;
+    text-decoration: none;
+
+    transition: all 0.4s ease;
+
+    // opacity: 0.5;
+
+    .photo {
+      img {
+        max-width: 110px;
+        max-height: 110px;
+        border-radius: 50%;
+      }
+    }
+
+    .name {
+      // background: pink;
+      color: #444;
+
+      margin-top: 10px;
+
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .position {
+      // background: green;
+      margin-top: 10px;
+
+      font-weight: 300;
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .player {
+      max-width: 120px;
+
+      .photo img {
+        max-width: 80px;
+        max-height: 80px;
+      }
+    }
+  }
+}

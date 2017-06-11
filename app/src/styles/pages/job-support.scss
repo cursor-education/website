@@ -1,0 +1,105 @@
+@import "../common/variables";
+@import "../common/mixins";
+@import "../components/icons";
+@import "../components/timeline";
+
+@import "partials/map";
+@import "partials/contact-information";
+@import "partials/footer";
+@import "partials/copyright";
+
+#intro {
+  background: #fd501f;
+
+  background-image: url(consultation-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: white;
+
+  height: 300px;
+
+  .section-wrapper {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  // .title {
+  //   // background: red;
+  //   margin-top: 110px;
+  //   text-align: center;
+  //   font-size: 40px;
+  //   font-weight: 500;
+  // }
+
+  .title {
+    display: inline-block;
+    text-align: center;
+
+    margin-top: 120px;
+    padding: 25px 40px;
+
+    font-size: 33px;
+    font-weight: 500;
+
+    background: rgba(white, 0.9);
+    color: #fa550c;
+    // color: #fff;
+
+    cursor: default;
+  }
+}
+
+.section-content {
+  @media screen and (max-width: 600px) {
+    // background: red;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 19px;
+    background: #00aaff;
+    border: 1px transparent solid;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 20px;
+
+    &:hover {
+      background: #fff;
+      color: #00aaff;
+      border-color: #00aaff;
+    }
+  }
+}
+
+.tingle-modal.get-job-support-details {
+  .tingle-modal-box {
+    background: red;
+    font-family: 'Roboto', serif;
+    font-size: 13px;
+    font-weight: 300;
+
+    .tingle-modal-box__content {
+      background: blue;
+
+      h1 {
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    .tingle-btn {
+      // background: orange;
+      padding: 10px 25px;
+    }
+  }
+}

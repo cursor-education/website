@@ -1,0 +1,231 @@
+.button.styled {
+  display: inline-block;
+  overflow: hidden;
+
+  border: 1px #fff solid;
+  border-radius: 2px;
+
+  padding: 10px 15px;
+  cursor: pointer;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  text-decoration: none;
+  outline: 0;
+
+  user-select: none;
+
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
+  border-color: transparent;
+  vertical-align: top;
+
+  transition: all 0.05s ease-in-out;
+
+  @media screen and (max-width: 700px) {
+    margin-bottom: 5px;
+  }
+
+  &.large,
+  &.l {
+    font-size: 15px;
+    padding: 12px 17px;
+    height: 42px;
+  }
+
+  &.xl {
+    font-size: 19px;
+    padding: 17px 19px;
+  }
+
+  &.white {
+    background: rgba(#fff, 1);
+    color: #00abfc;
+
+    &:hover {
+      background: #fff;
+
+      &:after {
+        border-color: #00abfc;
+      }
+    }
+  }
+
+  &.background-white {
+    background: rgba(#fff, 1);
+
+    &:hover {
+      background: #fff;
+
+      &:after {
+        border-color: #00abfc;
+      }
+    }
+  }
+
+  &.text-orange {
+    color: #fa550c;
+
+    &:hover {
+      color: #fa550c;
+
+      &:after {
+        border-color: #fa550c;
+      }
+    }
+  }
+
+  &.text-white {
+    color: #fff;
+
+    &:hover {
+      color: #fa550c;
+
+      &:after {
+        border-color: #fa550c;
+      }
+    }
+  }
+
+  &.orange,
+  &.background-orange {
+    background: #fa550c;
+    color: #fff;
+
+    &:hover {
+      background: #fff;
+      color: #fa550c;
+
+      &:after {
+        border-color: #fa550c;
+      }
+    }
+  }
+
+  &.frontend {
+    background: #00abfc;
+    color: #fff;
+
+    &:hover {
+      &:after {
+        border-color: #00abfc;
+      }
+    }
+  }
+
+  &.follow {
+    // background: blue;
+
+    &.instagram {
+      background: #2b5a82;
+      color: #fff;
+
+      // padding-left: 40px;
+      // padding-right: 100px;
+
+      &:hover {
+        &:after {
+          border-color: #fff;
+        }
+      }
+
+      .icon {
+        display: inline-block;
+
+        background: red;
+        background: transparent;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+
+        // position: absolute;
+        vertical-align: top;
+      }
+
+      .icon.logo {
+        width: 20px;
+        height: 20px;
+        // margin-left: -25px;
+        // margin-top: -3px;
+        background-image: url(https://www.instagram.com/static/images/ico/favicon-192.png/b407fa101800.png);
+        margin-right: 5px;
+        margin-top: -3px;
+      }
+
+      .icon.label {
+        width: 80px;
+        height: 25px;
+        // margin-left: 4px;
+        // margin-top: -7px;
+        background-image: url(/icons/instagram-text-white.png);
+        margin-left: 5px;
+        margin-top: -1px;
+
+        @media screen and (max-width: 400px) {
+          display: none;
+        }
+      }
+
+      // instagram-text-black.png
+
+      &:before {
+        // content: '';
+        // display: inline-block;
+        // position: absolute;
+
+        // width: 20px;
+        // height: 20px;
+
+        // vertical-align: -5px;
+        // margin-right: 5px;
+
+        // background: blue;
+        // background: transparent;
+        // background-image: url(https://www.instagram.com/static/images/ico/favicon-192.png/b407fa101800.png);
+        // background-repeat: no-repeat;
+        // background-position: center center;
+        // background-size: 100%;
+      }
+    }
+  }
+
+  &:hover {
+    background: white;
+    color: #00abfc;
+
+    // box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 12px -8px rgba(0, 0, 0, 0.4);
+
+    &:after {
+      border-color: #00abfc;
+
+      margin-left: 5px;
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    // background: blue;
+    // box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    // background: #2E5481;
+    // border: solid 1px #203E5F;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  }
+
+  &:after {
+    content: '';
+    display: inline-block;
+
+    border: solid #fff;
+    border-width: 0 1px 1px 0;
+
+    padding: 3px;
+    margin-left: -3px;
+    margin-right: -3px;
+
+    opacity: 0;
+    transform: rotate(-45deg);
+
+    transition: all 0.1s ease-in;
+  }
+}

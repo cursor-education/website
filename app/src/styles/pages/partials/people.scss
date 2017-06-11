@@ -1,0 +1,153 @@
+section#people {
+  // display: none;
+  padding: 30px 0px 0px 0px;
+
+  .people-list {
+    // background: red;
+    text-align: center;
+
+    height: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+
+    &:hover {
+      i.student {
+        opacity: 0.2;
+        margin-left: -36px;
+        // margin-right: 10px;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      margin-left: -20px;
+      &:hover {
+        i.student {
+          margin-left: -70px;
+        }
+      }
+    }
+
+    i.student {
+      position: relative;
+      display: inline-block;
+      vertical-align: bottom;
+
+      width: 100px;
+      height: 300px;
+      margin-left: -37px;
+
+      @media screen and (max-width: 600px) {
+        margin-left: -70px;
+      }
+
+      background: transparent;
+      // background: blue;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+
+      transition: opacity 0.2s ease-in-out,
+                  margin 0.2s ease-in-out;
+      // filter: blur(0.5px);
+      // zoom: 0.8;
+
+      opacity: 1;
+      z-index: 1;
+
+      cursor: default;
+
+      &.active,
+      &:hover {
+        opacity: 1;
+        z-index: 2;
+        // filter: blur(0);
+
+        margin-left: -30px;
+        margin-right: 15px;
+
+        @media screen and (max-width: 600px) {
+          margin-left: -70px;
+          margin-right: 0;
+        }
+      }
+
+      &#dasha-dementova {
+        background-image: url(/students/300h/dasha-dementova.png);
+      }
+
+      &#andrey-mironichev {
+        background-image: url(/students/300h/andrey-mironichev.png);
+        width: 108px;
+      }
+
+      &#artem-zatula {
+        background-image: url(/students/300h/artem-zatula.png);
+        width: 108px;
+      }
+
+      &#bohdan-chaban {
+        background-image: url(/students/300h/bohdan-chaban.png);
+      }
+
+      &#diana-nastusenko {
+        background-image: url(/students/300h/diana-nastusenko.png);
+        width: 110px;
+      }
+
+      &#dmytro-taranenko {
+        background-image: url(/students/300h/dmytro-taranenko.png);
+      }
+
+      &#dmytro-yushkevich {
+        background-image: url(/students/300h/dmytro-yushkevich.png);
+      }
+
+      &#ivan-kondratiuk {
+        background-image: url(/students/300h/ivan-kondratiuk.png);
+        width: 160px;
+      }
+
+      &#mykola-samila {
+        background-image: url(/students/300h/mykola-samila.png);
+        width: 130px;
+      }
+
+      &#oleksand-semochko {
+        background-image: url(/students/300h/oleksand-semochko.png);
+        width: 120px;
+      }
+
+      &#olesya-paraschak {
+        background-image: url(/students/300h/olesya-paraschak.png);
+        width: 120px;
+      }
+
+      &#stanislav-lakhovytch {
+        background-image: url(/students/300h/stanislav-lakhovytch.png);
+      }
+
+      &#vitaliy-palyushok {
+        background-image: url(/students/300h/vitaliy-palyushok.png);
+      }
+
+      &#volodymyr-yevtushenko  {
+        background-image: url(/students/300h/volodymyr-yevtushenko.png);
+      }
+
+      &#yurij-koshel {
+        background-image: url(/students/300h/yurij-koshel.png);
+      }
+
+      &#yuriy-grebinyuk {
+        background-image: url(/students/300h/yuriy-grebinyuk.png);
+      }
+
+      &#yuriy-pankiv {
+        background-image: url(/students/300h/yuriy-pankiv.png);
+      }
+
+
+    }
+
+  }
+}

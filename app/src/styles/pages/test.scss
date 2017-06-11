@@ -1,0 +1,16 @@
+@import "../common/variables";
+@import "../common/mixins";
+@import "../components/icons";
+@import "../components/timeline";
+@import "../components/buttons";
+
+@import "partials/people";
+@import "partials/gallery";
+@import "partials/trainers";
+@import "partials/map";
+@import "partials/footer";
+@import "partials/social-icons";
+@import "partials/copyright";
+
+$debug: true !default;
+$debug: false;

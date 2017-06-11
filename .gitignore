@@ -1,1 +1,14 @@
-node_modules/
+!.keep
+
+.DS_Store
+
+app/build/tmp
+app/dest
+app/src/vendor
+app/src/data
+app/src/config.json
+
+.publish
+
+node_modules
+npm-debug.log

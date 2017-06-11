@@ -1,0 +1,31 @@
+extends ../common/layout.pug
+
+block vars
+  - var page = "teacher"
+
+block title
+  | Школа програмування | CURSOR Education
+
+block meta
+  meta(property="og:url" content="http://cursor.education/teacher/"+teacher.id)
+  link(rel="canonical", href="http://cursor.education/teacher/"+teacher.id)
+
+block content
+  #background-wrap
+    #background-image(data-url=teacher.background)
+    #background-overlay
+
+  section.section#teacher-information
+    .section-wrapper
+      .section-content
+        .left
+          img.photo(src=teacher.photo)
+          h1.name= teacher.name
+          h3.position= teacher.position
+        .right
+          .description !{teacher.desc}
+          .fb-like(data-href="https://www.facebook.com/education.cursor/" data-width="500" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true")
+
+          .comments
+            .label Відгуки про викладача:
+            .fb-comments(data-href="http://cursor.education/teacher/"+teacher.id, data-numposts="5")

@@ -1,2 +1,5 @@
+app/build
+app/dest
+app/src
 app/node_modules
 npm-debug.log

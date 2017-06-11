@@ -1,0 +1,20 @@
+doctype html
+
+if !config.debug
+  include ascii.pug
+
+- var page = "default"
+block vars
+
+html(lang="en")
+  head
+    include layout-head.pug
+  body(id="page-"+page)
+    #fb-root
+
+    include navigation.pug
+
+    main#page.container
+      block content
+
+    include layout-scripts.pug

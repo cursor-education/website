@@ -1,0 +1,40 @@
+section.section#intro
+  .background-wrapper
+    .background-image
+    .background-overlay
+  .section-wrapper
+    .logo
+    h2.course-title FRONT-END Education
+    h3.course-subtitle HTML5, CSS3, JAVASCRIPT
+    h4.course-technologies Github, SASS, Material, Bower, Angular, ES6, npm &amp; Node.js, Gulp, unit tests
+    .break
+    .course-short-description Повний цикл веб-розробки! Навчіться створювати круті, динамічні та інтерактивні веб-сайти за допомогою HTML5, CSS3 та Javascript!
+    .course-start
+      span.label Початок навчання:&nbsp;
+      span.date 24 квітня
+    .buttons
+      //- .button.styled.get-more-info(data-template="get-more-info-template") Отримати більше інформації
+      //- .button.styled.white.enroll-in-training(data-template="reserve-template") Зарезервувати місце
+      .button.large.styled.white.enroll-in-training(data-template="reserve-template") Зареєструватися на курс
+
+script(type="text/template")#get-more-info-template
+  form
+    h3 Ми готові надати відповіді на усі ваші запитання, та усю потрібно інформацію про навчальний курс.
+    h3 Залиште свої дані, щоб ми могли до вас зателефонувати:
+    .field.first
+      .label Ім'я:
+      input(required type="text" name="name" placeholder="Тарас Шевченко")
+    .field
+      .label Телефон:
+      input(required type="text" name="phone" placeholder="093 123 45 67")
+
+
+script(type="text/template")#reserve-template
+  form
+    h3 Щоб зарезервувати місце, залиште свої контакті дані:
+    .field.first
+      .label Ім'я:
+      input(required type="text" name="name" placeholder="Тарас Шевченко")
+    .field
+      .label Телефон:
+      input(required type="text" name="phone" placeholder="093 123 45 67")

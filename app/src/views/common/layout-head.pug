@@ -1,0 +1,102 @@
+meta(charset="utf-8")
+meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+
+meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, shrink-to-fit=no")
+
+title
+  block title
+    block subtitle
+    |  | CURSOR Education
+
+meta(property="fb:app_id" content="1305559599520482")
+meta(property="fb:admins" content="100000686899395")
+
+meta(name="author" content="CURSOR Education")
+meta(name="description" content="Курси програмування на FRONTEND, JAVA та RUBY. Навчання на реальних проектах з професіоналами.")
+
+meta(name="keywords" content="програмування у львові, програмування львів, курси програмування львів, курси програмування онлайн, програмування онлайн, школа програмування львів, курси frontend, програмуванння JAVA, курси JavaScript")
+
+meta(property="og:title" content="Школа програмування | CURSOR Education")
+meta(property="og:type" content="website")
+meta(property="og:locale" content="uk_UA")
+meta(property="og:description" content="Курси програмування FRONTEND, JAVA та RUBY. Навчання на реальних проектах з професіоналами.")
+meta(property="og:image" content="http://ukraine.cursor.education/og-image.png")
+meta(property="og:site_name" content="CURSOR Education")
+
+meta(name="robots" content="all")
+meta(name="revisit-after" content="2 days")
+
+block meta
+  link(rel="canonical", href="http://cursor.education/")
+  meta(property="og:url" content="http://cursor.education/")
+
+link(rel="icon" type="image/png" href="/favicon.ico")
+link(rel="icon" type="image/x-icon" href="/favicon.ico")
+link(rel="shortcut icon" type="image/png" href="/favicon.ico")
+
+link(href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:100,200,300,400,500,600,700,800|Slabo+27px:200,300,400,500" rel="stylesheet")
+
+//- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cssgram/0.1.10/cssgram.min.css")
+
+link(href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css", media="all", rel="stylesheet")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+
+script(src="https://cdnjs.cloudflare.com/ajax/libs/tingle/0.9.0/tingle.min.js")
+link(href="https://cdnjs.cloudflare.com/ajax/libs/tingle/0.9.0/tingle.min.css", media="all", rel="stylesheet")
+
+if !config.debug
+  script(src='//cdn.zarget.com/142180/326010.js')
+
+if !config.debug
+  script(type='text/javascript').
+    window.__lo_site_id = 79955;
+    (function() {
+      var wa = document.createElement('script'); wa.type = 'text/javascript'; wa.async = true;
+      wa.src = 'https://d10lpsik1i8c69.cloudfront.net/w.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wa, s);
+    })();
+
+if !config.debug
+  //- track javascript browser-side errors
+  script(src="https://cdn.ravenjs.com/3.14.0/raven.min.js")
+  script(type="text/javascript").
+    Raven.config('https://066ef41a5579405ea57cd3d76b46ebc5@sentry.io/155438').install()
+
+if !config.debug
+  // Google Analytics
+  script(type="text/javascript").
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-60797660-2', 'auto');
+    ga('send', 'pageview');
+
+if !config.debug
+  // Google Tag Manager
+  script.
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NLDDD5P');
+  // End Google Tag Manager
+  noscript
+    iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-NLDDD5P" height="0" width="0" style="display:none;visibility:hidden")
+
+if !config.debug
+  // Facebook Pixel Code
+  script.
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1550644938580202');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1550644938580202&ev=PageView&noscript=1"/></noscript>
+
+include layout-styles.pug

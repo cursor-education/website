@@ -1,0 +1,26 @@
+section#map {
+  #lviv_office_map {
+    width: 100%;
+    height: 500px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 0;
+      box-shadow: rgba(0,0,0,0.29) 0 0 3px 3px;
+      z-index: 999;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 0;
+      bottom: 0;
+      margin-bottom: 0;
+      box-shadow: rgba(0,0,0,0.29) 0 0 3px 3px;
+      z-index: 999;
+    }
+  }
+}

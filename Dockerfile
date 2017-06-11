@@ -7,7 +7,8 @@ RUN apt-get update \
 RUN echo 2 && node -v
 
 ADD app/ /app/
-RUN cd /app; npm install
+# RUN cd /app; npm install
+RUN npm rebuild node-sass --force
 
 RUN ls -la app
 

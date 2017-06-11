@@ -1,0 +1,25 @@
+{
+  "version": "0.1",
+  "debug": {
+    "@development": true,
+    "@production": false
+  },
+  "base-url": {
+    "@development": "//name.github.io/repo/",
+    "@staging": "",
+    "@production": "//production.domain/"
+  },
+  "data-spreadsheets": {
+    "team": "1kb_xxx...xxxQbU",
+    "test": ".."
+  },
+
+  // proceed the client registration on https://www.instagram.com/developer/clients/manage/
+  // https://instagram.com/oauth/authorize/?client_id={client-id-here}&redirect_uri=http://ralabs.org/&response_type=token
+  "instagram": {
+    "enabled": true,
+    "client_id": "",
+    "secret": "",
+    "access_token": ""
+  }
+}

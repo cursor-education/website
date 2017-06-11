@@ -1,0 +1,38 @@
+section#copyright {
+  background: #fafafa;
+
+  .section-wrapper {
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+
+  .copyright {
+    text-align: center;
+    letter-spacing: 0.3px;
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  .words,
+  .years {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .words {
+    text-transform: uppercase;
+    color: #999999;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+
+    .cursor {
+      color: #dc4f12;
+    }
+  }
+
+  .years {
+    margin-left: 3px;
+    color: #999999;
+  }
+}

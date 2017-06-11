@@ -1,0 +1,187 @@
+@import "common/variables";
+@import "common/mixins";
+
+@import "components/media";
+@import "components/navigation";
+@import "components/page";
+
+body {
+  font-family: 'Roboto', serif;
+}
+
+::selection {
+  background: rgba(#111, 0.9); /* WebKit/Blink Browsers */
+  color: #fff;
+}
+::-moz-selection {
+  background: rgba(#111, 0.9); /* Gecko Browsers */
+  color: #fff;
+}
+
+img {
+  user-select: none;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.brand-name {
+  display: inline-block;
+  color: #999999;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+
+  .word-cursor,
+  .word-education {
+    display: inline-block;
+  }
+
+  .word-cursor {
+    color: #dc4f12;
+  }
+
+  .word-education {
+    margin-left: -4px;
+  }
+}
+
+.tingle-modal .tingle-modal__close {
+  @media screen and (max-width: 540px) {
+    .tingle-modal__closeLabel {
+      display: none;
+    }
+
+    .tingle-modal__closeIcon {
+      margin-right: 0;
+      vertical-align: top;
+    }
+  }
+}
+
+.tingle-modal .tingle-modal-box {
+  // background: blue;
+
+  .tingle-modal-box__content {
+    padding-bottom: 2rem;
+
+    @media screen and (max-width: 540px) {
+      padding: 1.5rem;
+    }
+  }
+
+  .tingle-modal-box__footer {
+    // background: green;
+
+    .tingle-btn {
+      // background: red;
+      @media screen and (max-width: 540px) {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  h3 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-size: 21px;
+    font-weight: 400;
+
+    line-height: 1.3em;
+  }
+
+  .field {
+    // background: yellow;
+    margin-bottom: 15px;
+    display: inline-table;
+
+    margin-right: 15px;
+
+    .label,
+    input {
+      display: table-cell;
+    }
+
+    .label {
+      // background: green;
+      padding-right: 5px;
+    }
+
+    input {
+      background: white;
+      border: none;
+      background: #eee;
+      padding: 10px 10px;
+      border: 1px transparent solid;
+
+      &.error {
+        border: 1px red solid;
+      }
+    }
+  }
+
+  // background: red;
+}
+
+
+// .facebook-messenger-widget {
+//   background: transparent;
+
+//   position: fixed;
+//   bottom: 10px;
+//   right: 50px;
+
+//   width: 50px;
+//   height: 50px;
+//   z-index: 99;
+
+//   padding: 5px;
+
+//   border-radius: 50%;
+
+//   .logo {
+//     display: inline-block;
+//     vertical-align: middle;
+
+//     width: 40px;
+//     height: 40px;
+
+//     background: transparent;
+//     background-image: url(https://cdn.worldvectorlogo.com/logos/facebook-messenger.svg);
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//     background-size: 100%;
+
+//     // @-webkit-keyframes wcm_button_change
+//     // {
+//     //   0%, 42.5% {
+//     //     -webkit-transform:rotateY(0deg);
+//     //     transform:rotateY(0deg);
+//     //   }
+//     //   50%, 92.5% {
+//     //     -webkit-transform: rotateY(180deg);
+//     //     transform:rotateY(180deg);
+//     //   }
+//     //   to{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}}
+
+
+//     @-webkit-keyframes test {
+//       0% {
+//         transform: rotateY(0deg);
+//       }
+
+//       100% {
+//         transform: rotateY(180deg);
+//       }
+//     }
+
+//     animation: test 6s infinite;
+//     transform-style: preserve-3d;
+//   }
+// }
