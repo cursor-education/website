@@ -6,7 +6,7 @@
     "start:dev": "NODE_ENV=development npm run start",
     "build:dev": "NODE_ENV=development npm run build",
     "deploy:dev": "NODE_ENV=development npm run deploy",
-    "start": "npm rebuild node-sass --force && gulp         --gulpfile build/gulpfile.babel.js",
+    "start": "gulp         --gulpfile build/gulpfile.babel.js",
     "build": "gulp build   --gulpfile build/gulpfile.babel.js 2>/dev/null",
     "deploy": "NODE_ENV=test       gulp deploy    --gulpfile build/gulpfile.babel.js",
     "deploy:production": "NODE_ENV=production gulp deploy    --gulpfile build/gulpfile.babel.js"

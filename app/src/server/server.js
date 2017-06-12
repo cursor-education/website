@@ -38,6 +38,8 @@ app.use(i18n({
 
 app.locals.pretty = environment.isDevelopment() ? '  ' : false;
 
+let config = require('./helpers/config');
+
 app.use((req, res, next) => {
   // GET /?lang=ua
   // will be proceed by i18n middleware before this request
@@ -57,7 +59,8 @@ app.use((req, res, next) => {
     }
   }
 
-  let config = require('./helpers/config');
+  console.log(11);
+  // let config = require('./helpers/config');
 
   res.locals = {
     'config': config.getConfig(),
